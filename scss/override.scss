@@ -1,0 +1,23 @@
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/buttons';
+
+//Creo variabile con colore;
+$customBgNavbar: #0F0021;
+$customBtnPrincipal: rgba(84,49,89, 1);
+$customBtnSecondary: rgba(124,106,165, 1);
+
+
+//Creo nuova mappa di colori.
+$custom-colors: (
+    customBgNavbar: $customBgNavbar,
+    customBtnPrincipal: $customBtnPrincipal,
+    customBtnSecondary: $customBtnSecondary
+);
+
+//Eseguo merge, ovvero unione con theme-colors, mappa originale di bootstrap
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';

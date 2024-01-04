@@ -1,0 +1,34 @@
+@import 'override.scss';
+
+/* Color Theme Swatches in RGBA */
+
+$Deborah-make-up-palette-1-rgba: rgba(84,49,89, 1);
+$Deborah-make-up-palette-2-rgba: rgba(124,106,165, 1);
+$customBg: rgba(188,175,216, 1);
+$Deborah-make-up-palette-4-rgba: rgba(165,135,129, 1);
+$Deborah-make-up-palette-5-rgba: rgba(12,12,12, 1);
+
+body {
+    background-color: $customBg;
+}
+
+.logo {
+    height: 4rem;
+}
+
+.cardProducts {
+    height: 30rem;
+    width: 18rem;
+    margin: 1rem;
+    img {
+        padding: 0.1rem;
+        height: 15rem;
+    }
+    div {
+        .shopBtn {
+            margin: 0.2rem;
+            padding: 0.2rem;
+        }
+    }
+
+}
